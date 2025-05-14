@@ -192,7 +192,7 @@ const Contact = () => {
                 <p className="flex items-center">
                   {submitted.type === "success" ? (
                     <svg
-                      className="w-5 h-5 mr-2 text-green-500 dark:text-green-300"
+                      className="w-7 h-7 mr-2 text-green-500 dark:text-green-300"
                       fill="currentColor"
                       viewBox="0 0 20 20"
                     >
@@ -204,7 +204,7 @@ const Contact = () => {
                     </svg>
                   ) : (
                     <svg
-                      className="w-5 h-5 mr-2 text-red-500 dark:text-red-300"
+                      className="w-7 h-7 mr-2 text-red-500 dark:text-red-300"
                       fill="currentColor"
                       viewBox="0 0 20 20"
                     >
@@ -222,9 +222,8 @@ const Contact = () => {
                         : "text-red-600 dark:text-red-300"
                     }`}
                   >
-                    {submitted.type}!
+                    {submitted.type}!{submitted.message}
                   </span>
-                  &nbsp;{submitted.message}
                 </p>
               </div>
             ) : (
