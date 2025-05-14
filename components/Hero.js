@@ -1,10 +1,21 @@
-import React, { useEffect, useRef } from "react";
+"use client";
+import React, { useState, useEffect, useRef } from "react";
+import { useTheme } from "@/context/ThemeContext";
+import { isMobile } from "react-device-detect";
+import { Typewriter } from "react-simple-typewriter";
 import { ChevronDown } from "lucide-react";
 
 const Hero = () => {
+  const { theme } = useTheme();
+  const cursorColor = theme === "dark" ? "white" : "black";
   const titleRef = useRef(null);
   const subtitleRef = useRef(null);
   const ctaRef = useRef(null);
+  const [isClientMobile, setIsClientMobile] = useState(false);
+
+  useEffect(() => {
+    setIsClientMobile(isMobile);
+  }, []);
 
   useEffect(() => {
     const title = titleRef.current;
@@ -65,9 +76,10 @@ const Hero = () => {
             className="text-5xl md:text-7xl font-bold tracking-tight text-gray-900 dark:text-white"
           >
             <span className="relative inline-block gradient-text">
-              Creative Developer
+              <Typewriter words={['Creative','Passionate', 'Innovative']} loop={true} cursor cursorStyle="|" cursorColor={cursorColor} cursorBlinking={true}  typeSpeed={70} deleteSpeed={50} delaySpeed={1500}  />
             </span>
-            <br /> & Designer
+            <span className="gradient-text">{isClientMobile ? <br /> : " "} Developer</span>
+            <span>{isClientMobile? "" :<br />} & Designer</span>
           </h1>
 
           <p
