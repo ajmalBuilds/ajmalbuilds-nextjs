@@ -15,14 +15,14 @@ const Footer = () => {
             </p>
             <div className="flex mt-6 space-x-4">
               <a
-                href="#"
+                href="https://github.com/ajmalBuilds"
                 className="text-gray-400 hover:text-teal-400 transition-colors duration-300"
                 aria-label="GitHub"
               >
                 <Github size={20} />
               </a>
               <a
-                href="#"
+                href="https://www.linkedin.com/mohammedajmalkhan01"
                 className="text-gray-400 hover:text-teal-400 transition-colors duration-300"
                 aria-label="LinkedIn"
               >
@@ -102,8 +102,8 @@ const Footer = () => {
             <h4 className="text-lg font-semibold text-white mb-4">Contact</h4>
             <ul className="space-y-2 text-gray-400">
               <li>Nizamabad, Telangana</li>
-              <li>ajmalBuilds@gmail.com</li>
-              <li>+91 81859 00164</li>
+              <li><a href="mailto:ajmalbuilds@gmail.com" className="text-gray-400 hover:text-teal-400 transition-colors duration-300 no-underline">ajmalBuilds@gmail.com</a></li>
+              <li><a href="tel:+918185900164" className="text-gray-400 hover:text-teal-400 transition-colors duration-300 no-underline">+91 81859 00164</a></li>
             </ul>
           </div>
         </div>

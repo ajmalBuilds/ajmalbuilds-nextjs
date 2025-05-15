@@ -110,7 +110,7 @@ const Contact = () => {
                     Email
                   </h4>
                   <a
-                    href="mailto:hello@example.com"
+                    href="mailto:ajmalbuilds@gmail.com"
                     className="text-lg text-gray-900 dark:text-white hover:text-teal-600 dark:hover:text-teal-400 transition-colors"
                   >
                     ajmalBuilds@gmail.com
@@ -127,7 +127,7 @@ const Contact = () => {
                     Phone
                   </h4>
                   <a
-                    href="tel:+11234567890"
+                    href="tel:+918185900164"
                     className="text-lg text-gray-900 dark:text-white hover:text-teal-600 dark:hover:text-teal-400 transition-colors"
                   >
                     +91 81859 00164
